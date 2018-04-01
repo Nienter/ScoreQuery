@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/primary_blue"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/register_edt_studentNo"
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:hint="请输入您的登录号"
+            android:background="@drawable/tv3_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="numberPassword"
+            android:id="@+id/register_edt_password"
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:hint="请输入您的密码"
+            android:background="@drawable/tv3_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--<EditText-->
+        <!--android:inputType="numberPassword"-->
+        <!--android:id="@+id/register_edt_repassword"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:hint="请再次输入您的密码"-->
+        <!--android:background="@drawable/tv3_shape"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+        <TextView
+            android:id="@+id/register_tv_register"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="注册"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>

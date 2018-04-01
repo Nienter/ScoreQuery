@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <!--
+      ?attr/actionBarSize:表示根据屏幕的分辨率采用系统默认的高度
+      如果低版本也要使用的话,则需要使用v7包的,否则只有api21上才能有效
+      -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_blue">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:background="@color/primary_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/main_ll_enterscore"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/add"
+                android:layout_width="70dp"
+                android:layout_height="70dp"  />
+            <TextView
+                android:textColor="@color/grey_background"
+                android:textSize="18sp"
+                android:text="输入药品"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/main_ll_scan_enterscore"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/scan"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+            <TextView
+                android:textColor="@color/grey_background"
+                android:textSize="18sp"
+                android:text="扫码录入药品"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:background="@color/primary_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/main_ll_queryScore"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/query"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+            <TextView
+                android:textColor="@color/grey_background"
+                android:textSize="18sp"
+                android:text="药品查询"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/main_ll_scan_queryScore"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/scan"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+            <TextView
+                android:textColor="@color/grey_background"
+                android:textSize="18sp"
+                android:text="扫码查询药品"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/main_tv_termNo"
+        android:padding="5dp"
+        android:text="当前学期:未设置"
+        android:textColor="@color/primary_blue"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/main_tv_course"
+        android:padding="5dp"
+        android:text="当前课程:无"
+        android:textColor="@color/primary_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:background="@color/grey_background"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="5dp"
+            android:text="2017年保送研究生的学生名单!"
+            android:textColor="@color/primary_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="5dp"
+            android:text="我校周年庆圆满成功!"
+            android:textColor="@color/primary_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="5dp"
+            android:text="热烈欢迎市领导莅临我校参观!"
+            android:textColor="@color/primary_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="5dp"
+            android:text="欢迎2017新生来校报道!"
+            android:textColor="@color/primary_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="5dp"
+            android:text="我校参加全国创业设计大赛获得二等奖,恭喜获奖同学!"
+            android:textColor="@color/primary_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="5dp"
+            android:text="想要无偿献血的同学请2017年8月5日到校医务室,欢迎同学踊跃参加!"
+            android:textColor="@color/primary_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

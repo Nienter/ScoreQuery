@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:id="@+id/enterquery_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:padding="10dp"
+        android:hint="药品信息"
+        android:textSize="18sp" />
+    <RelativeLayout
+        android:id="@+id/enterquery_rl"
+        android:background="@color/grey_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/enterquery_tv_total"
+            android:padding="3dp"
+            android:layout_alignParentLeft="true"
+            android:text="总共:0条"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/enterquery_tv_page"
+            android:padding="3dp"
+            android:layout_alignParentRight="true"
+            android:text="0/0页"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ListView
+        android:dividerHeight="1px"
+        android:divider="@color/primary_blue"
+        android:id="@+id/enterquery_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

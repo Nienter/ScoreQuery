@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:id="@+id/teacherscore_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:padding="10dp"
+        android:hint="我的名字(教师号:1000)"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_below="@id/teacherscore_tv_name"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:id="@+id/teacherscore_tv_term"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:padding="10dp"
+        android:hint="第一学期"
+        android:textSize="18sp" />
+     <RelativeLayout
+         android:id="@+id/teacherscore_rl"
+         android:layout_below="@id/teacherscore_tv_term"
+         android:background="@color/grey_background"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/teacherscore_tv_total"
+             android:padding="3dp"
+             android:layout_alignParentLeft="true"
+             android:text="总共:0条"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:id="@+id/teacherscore_tv_page"
+             android:padding="3dp"
+             android:layout_alignParentRight="true"
+             android:text="0/0页"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+     </RelativeLayout>
+    <ListView
+        android:dividerHeight="1px"
+        android:divider="@color/primary_blue"
+        android:layout_above="@+id/teacherscore_ll_bottom"
+        android:layout_below="@id/teacherscore_rl"
+        android:id="@+id/teacherscore_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/teacherscore_ll_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/grey_background"
+            android:id="@+id/teacherscore_tv_select"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/tv2_shape"
+            android:padding="10dp"
+            android:hint="成绩筛查"
+            android:textSize="18sp" />
+        <TextView
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/grey_background"
+            android:id="@+id/teacherscore_tv_result"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/tv2_shape"
+            android:padding="10dp"
+            android:hint="成绩概况"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

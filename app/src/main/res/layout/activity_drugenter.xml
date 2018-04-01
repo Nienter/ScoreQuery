@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/et_enter_id_drug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:hint="请输入药品编号id"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/et_enter_name_drug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:hint="请输入药品名"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:hint="请选择购买时间"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_drug_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:hint="请输入药品总量"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_drug_des"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        android:gravity="start"
+        android:background="@drawable/tv2_shape"
+        android:hint="请输入使用说明"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        />
+
+    <EditText
+        android:id="@+id/et_drug_point"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:hint="请输入地点"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background" />
+</LinearLayout>

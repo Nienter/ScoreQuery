@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="药品名称"
+            android:textColor="@color/primary_blue"
+            android:id="@+id/item_teacherscore_tv_name"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+           android:layout_toRightOf="@id/item_teacherscore_tv_name"
+            android:textColor="@color/primary_blue"
+            android:textColorHint="@android:color/darker_gray"
+            android:text="药品编号"
+            android:padding="5dp"
+            android:id="@+id/item_teacherscore_tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/item_teacherscore_tv_name"
+            android:text="具体信息"
+            android:textColor="@color/primary_blue"
+            android:id="@+id/item_teacherscore_tv_profession"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:layout_below="@id/item_teacherscore_tv_profession"
+            android:text="学期"
+            android:textColor="@color/primary_blue"
+            android:id="@+id/item_teacherscore_tv_termNo"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:layout_below="@id/item_teacherscore_tv_termNo"
+            android:text="名字"
+            android:textColor="@color/primary_blue"
+            android:id="@+id/item_teacherscore_tv_pesonName"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/item_teacherscore_head_iv_arrow"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/item_teacherscore_ll_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:text="购买时间"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_teacherscore_content_tv_peace"
+                android:layout_alignParentRight="true"
+                android:text="89分"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:text="药品总量:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_teacherscore_content_tv_exp"
+                android:layout_alignParentRight="true"
+                android:text="89分"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:text="药品说明:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_teacherscore_content_tv_mid"
+                android:layout_alignParentRight="true"
+                android:text="58分"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:text="地点:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_teacherscore_content_tv_final"
+                android:layout_alignParentRight="true"
+                android:text="75分"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_scan_fl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.mike.scorequery.widget.nextqrcode.ScoreLiveCameraView
+        android:id="@+id/fragment_scan_plcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="扫描药品二维码"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/fragment_scan_iv_top"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shadow" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_scan_rl_scan"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_below="@id/fragment_scan_iv_top"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/scan_qrcode_bg">
+
+            <ImageView
+                android:id="@+id/fragment_scan_iv_scanline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/scan_line1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_scan_rl_scan"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="将药品二维码放入框内,可自动扫描"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/fragment_scan_iv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/fragment_scan_rl_scan"
+            android:background="@drawable/shadow" />
+
+        <ImageView
+            android:id="@+id/fragment_scan_iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/fragment_scan_iv_bottom"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/fragment_scan_iv_top"
+            android:layout_toLeftOf="@id/fragment_scan_rl_scan"
+            android:background="@drawable/shadow" />
+
+        <ImageView
+            android:id="@+id/fragment_scan_iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/fragment_scan_iv_bottom"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/fragment_scan_iv_top"
+            android:layout_toRightOf="@id/fragment_scan_rl_scan"
+            android:background="@drawable/shadow" />
+    </RelativeLayout>
+    <include layout="@layout/activity_base_titlebar"/>
+</FrameLayout>
+

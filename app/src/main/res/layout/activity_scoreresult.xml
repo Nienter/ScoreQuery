@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:id="@+id/scoreresult_tv_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:padding="10dp"
+        android:hint="总人数:0人"
+        android:textSize="18sp" />
+    <TextView
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:id="@+id/scoreresult_tv_youxiu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:padding="10dp"
+        android:hint="优秀人数:0人"
+        android:textSize="18sp" />
+    <TextView
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:id="@+id/scoreresult_tv_liang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:padding="10dp"
+        android:hint="良好人数:0人"
+        android:textSize="18sp" />
+    <TextView
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:id="@+id/scoreresult_tv_zhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:padding="10dp"
+        android:hint="中等人数:0人"
+        android:textSize="18sp" />
+    <TextView
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:id="@+id/scoreresult_tv_jige"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:padding="10dp"
+        android:hint="及格人数:0人"
+        android:textSize="18sp" />
+    <TextView
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/grey_background"
+        android:id="@+id/scoreresult_tv_nopass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv2_shape"
+        android:padding="10dp"
+        android:hint="不及格人数:0人"
+        android:textSize="18sp" />
+    
+</LinearLayout>

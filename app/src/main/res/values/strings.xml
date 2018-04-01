@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">医药管理</string>
+    <string name="loading">数据加载中...请稍后</string>
+    </resources>
